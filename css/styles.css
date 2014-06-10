@@ -169,7 +169,7 @@ section.service-item
 	margin-bottom: 0.5em;
 	padding: 3em 1em;
 	box-sizing:border-box;
-	margin:0;
+	margin:0 auto;
 }
 
 section.service-item img
@@ -207,7 +207,7 @@ section.item-form-two .container form button
 
 footer
 {
-	padding:0 2em;
+	padding:5em 0;
 	box-sizing:border-box;
 
 }
@@ -252,4 +252,39 @@ span.text-description
 {
 	font-family: "pacificoregular";
 	font-size: 30px;
+}
+
+.img-size
+{
+	max-width: 180px;
+	width: 100%;
+}
+
+.filtro img {
+filter: url('#grayscale'); /* Versión SVG para IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+filter: grayscale(100%); /* Para cuando es estándar funcione en todos */
+filter: Gray(); /* IE4-8 and 9 */
+
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
+}
+.filtro img:hover { 
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-ms-filter: grayscale(0%);
+-o-filter: grayscale(0%);
+filter: none;
+
+-webkit-transition: all 0.5s ease;
+-moz-transition: all 0.5s ease;
+-ms-transition: all 0.5s ease;
+-o-transition: all 0.5s ease;
+transition: all 0.5s ease;
 }
